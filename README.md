@@ -3,7 +3,7 @@ Ejemplo de SPA realizado en Angular y Bootstrap
 
 > **UPDATE 07/01/2020:**: Repositorio actualizado.
 
-Imagen Principal Artículo <p align="center"><img src="v1.0/captura.jpg"></p>
+Imagen Principal Artículo <p align="center"><img src="v1.0/captura.jpg"></p> (Componente Heroes y Heroe)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
