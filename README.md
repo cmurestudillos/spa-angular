@@ -7,8 +7,6 @@ Imagen Principal Artículo <p align="center"><img src="captura.jpg"></p>
 
 Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
-Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
-
 ## Instalar Dependencias
 1. Instalar `npm install`
 2. Instalar `npm install bootstrap --save`
