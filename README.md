@@ -1,39 +1,32 @@
 # spa-angular
 Ejemplo de SPA realizado en Angular y Bootstrap
 
-> **UPDATE 07/01/2020:**: Repositorio actualizado. **(Componente Heroes y Heroe)
+> **UPDATE 08/01/2020:**: Repositorio actualizado. **(Buscador, Pipes, @Input/@Output (Componentes reutilizables))
 
-Imagen Principal Artículo <p align="center"><img src="v1.0/captura.jpg"></p> 
+Imagen Principal Artículo <p align="center"><img src="captura.jpg"></p> 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+
+Proyecto generado con [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
 ## Instalar Dependencias
-Instalar `npm install`
-Instalar `npm install bootstrap --save`
-Instalar `npm install jquery --save`
-Instalar `npm install popper.js --save`
-Instalar `npm install --save-dev @fortawesome/fontawesome-free`
+1. Instalar `npm install`
+2. Instalar `npm install bootstrap --save`
+3. Instalar `npm install jquery --save`
+4. Instalar `npm install popper.js --save`
+5. Instalar `npm install --save-dev @fortawesome/fontawesome-free`
 
-## Development server
+## Desarrollo
+Ejecutar `ng serve` // `ng serve -o`. Poner en el navegador `http://localhost:4200/`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Construir para su distribucion en produccion
+Ejecutar `ng build` para construir el proyecto. Esto genera en el directorio `dist/` todos los archivos necesarios para su distribucion.
 
-## Code scaffolding
+## Test - Pruebas unitarias
+Ejecutar `ng test` para proceder a testearlo via [Karma](https://karma-runner.github.io).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Test - end-to-end
+Ejecutar `ng e2e` para pruebas end-to-end via [Protractor](http://www.protractortest.org/).
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Ayuda
+Para mas informacion sobre Angular CLI, ejecutar `ng help` o leer [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
