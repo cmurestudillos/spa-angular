@@ -1,4 +1,4 @@
-# spa-angular
+# spaHeroes
 Ejemplo de SPA realizado en Angular y Bootstrap
 
 > **UPDATE 08/01/2020:**: Repositorio actualizado. **(Buscador, Pipes, @Input/@Output (Componentes reutilizables))
