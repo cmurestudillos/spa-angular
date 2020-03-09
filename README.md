@@ -3,7 +3,7 @@ Ejemplo de Spa (Single Page Application) realizado en Angular y Bootstrap 4.
 
 > **UPDATE 26/02/2020:**: Repositorio actualizado. **(Home, Router (useHash))
 
-Imagen Principal Artículo <p align="center"><img width="400" src="camptura_1.jpg">   <img width="400" src="captura_2.jpg"></p> 
+Imagen Principal Artículo <p align="center"><img src="captura_2.jpg"></p> 
 
 ## Instalar Dependencias
 - Instalar `npm install`
