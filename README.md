@@ -1,7 +1,7 @@
 # spaHeroes
 Ejemplo de Spa (Single Page Application) realizado en Angular y Bootstrap 4.
 
-> **UPDATE 26/02/2020:**: Repositorio actualizado. **(Home, Router (useHash))
+> **UPDATE 09/03/2020:**: Repositorio actualizado. **(Estructura de directorio Components)
 
 Imagen Principal Artículo <p align="center"><img src="captura_2.jpg"></p> 
 
