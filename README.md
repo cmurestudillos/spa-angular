@@ -1,9 +1,9 @@
 # spaHeroes
 Ejemplo de Spa (Single Page Application) realizado en Angular y Bootstrap 4.
 
-> **UPDATE 09/03/2020:**: Repositorio actualizado. **(Estructura de directorio Components)
+> **UPDATE 11/03/2020:**: Repositorio actualizado. **(Eliminar componente Home, cambios de diseño y estilos)
 
-Imagen Principal Artículo <p align="center"><img src="captura_2.jpg"></p> 
+Imagen Principal Artículo <p align="center"><img src="captura.jpg"></p> 
 
 ## Instalar Dependencias
 - Instalar `npm install`
