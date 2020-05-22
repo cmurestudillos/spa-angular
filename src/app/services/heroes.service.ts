@@ -7,9 +7,7 @@ export class HeroesService{
 
     heroes:Heroe[] = (data as any).default;
 
-    constructor() {
-        console.log("Servicio 'HeroesService' listo para usar.");
-    }
+    constructor() {}
 
     // Obtenemos Heroes
     getHeroes(){
