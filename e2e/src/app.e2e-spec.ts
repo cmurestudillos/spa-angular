@@ -1,7 +1,7 @@
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('workspaAngularce-project App', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('spa app is running!');
+    expect(page.getTitleText()).toEqual('spaAngular app is running!');
   });
 
   afterEach(async () => {

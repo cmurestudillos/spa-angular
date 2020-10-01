@@ -1,6 +1,6 @@
-# Spa (Single Page Application)
+# SPA (Single Page Application)
 
-Ejemplo de Spa (Single Page Application) realizado en Angular y Bootstrap 4.
+Ejemplo de SPA (Single Page Application) realizado en Angular y Bootstrap 4.
 
 ## Instalar Dependencias
 - Instalar `npm install`
