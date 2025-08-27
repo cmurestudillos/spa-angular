@@ -1,18 +1,64 @@
-<h1 class="animated fadeIn slow text-white">{{heroe.nombre | uppercase}} <small>( {{heroe.aparicion | date:'y'}} )</small></h1>
-<hr class="bg-white">
-<div class="row animated fadeIn slow bg-white rounded p-3">
+<!-- Loading spinner -->
+<div *ngIf="loading" class="text-center text-white">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Cargando...</span>
+  </div>
+  <p>Cargando héroe...</p>
+</div>
+
+<!-- Error message -->
+<div *ngIf="!loading && !heroe" class="alert alert-danger">
+  <h4>Héroe no encontrado</h4>
+  <p>Lo sentimos, el héroe que buscas no existe.</p>
+  <button (click)="volverHeroes()" type="button" class="btn btn-primary">Volver a Heroes</button>
+</div>
+
+<!-- Hero details -->
+<div *ngIf="!loading && heroe">
+  <h1 class="animated fadeIn slow text-white">
+    {{ heroe.nombre | uppercase }}
+    <small>( {{ heroe.aparicion | date: 'y' }} )</small>
+  </h1>
+  <hr class="bg-white" />
+
+  <div class="row animated fadeIn slow bg-white rounded p-3">
     <div class="col-md-4">
-        <img [src]="heroe.img" [title]="heroe.nombre" class="img-fluid shadow-lg p-3 mb-5 bg-white rounded" [alt]="heroe.nombre">
-        <br><br>
-        <button (click)="volverHeroes()" type="button" class="btn btn-4 btn-block"><i>Volver</i></button>
+      <img
+        [src]="heroe.img"
+        [title]="heroe.nombre"
+        class="img-fluid shadow-lg p-3 mb-5 bg-white rounded"
+        [alt]="heroe.nombre" />
+      <br /><br />
+      <button (click)="volverHeroes()" type="button" class="btn btn-4 btn-block">
+        <i>Volver</i>
+      </button>
     </div>
+
     <div class="col-md-8">
-        <h3>{{heroe.nombre}}</h3>
-        <hr>
-        <p>{{heroe.bio}}</p>
-        <div>
-            <img *ngIf="heroe.casa == 'DC'" src="assets/img/dc.svg" [title]="heroe.casa" class="img-fluid" width="150" height="150" [alt]="heroe.casa">
-            <img *ngIf="heroe.casa == 'Marvel'" src="assets/img/marvel.svg" [title]="heroe.casa" class="img-fluid" width="150" height="150" [alt]="heroe.casa">
-        </div>
+      <h3>{{ heroe.nombre }}</h3>
+      <hr />
+      <p>{{ heroe.bio }}</p>
+      <p class="card-text">
+        <small class="text-muted"> <strong>Año:</strong> {{ getAparicionYear() }} </small>
+      </p>
+      <div>
+        <img
+          *ngIf="heroe.casa == 'DC'"
+          src="assets/img/dc.svg"
+          [title]="heroe.casa"
+          class="img-fluid"
+          width="150"
+          height="150"
+          [alt]="heroe.casa" />
+        <img
+          *ngIf="heroe.casa == 'Marvel'"
+          src="assets/img/marvel.svg"
+          [title]="heroe.casa"
+          class="img-fluid"
+          width="150"
+          height="150"
+          [alt]="heroe.casa" />
+      </div>
     </div>
+  </div>
 </div>

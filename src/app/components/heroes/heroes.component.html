@@ -1,6 +1,20 @@
 <h1 class="text-white">Heroes <small>Marvel y DC</small></h1>
-<hr class="bg-white">
+<hr class="bg-white" />
 
-<div class="card-columns">
-  <app-heroe-tarjeta (heroeSeleccionado)="verHeroe( $event )" [heroe]="item" [index]="i" *ngFor="let item of heroes; let i = index"></app-heroe-tarjeta>
+<!-- Loading spinner -->
+<div *ngIf="loading" class="text-center text-white">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Cargando...</span>
+  </div>
+  <p>Cargando héroes...</p>
+</div>
+
+<!-- Heroes grid with better layout -->
+<div class="heroes-grid" *ngIf="!loading">
+  <app-heroe-tarjeta
+    (heroeSeleccionado)="verHeroe($event)"
+    [heroe]="item"
+    [index]="i"
+    *ngFor="let item of heroes; let i = index">
+  </app-heroe-tarjeta>
 </div>

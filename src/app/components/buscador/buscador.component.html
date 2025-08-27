@@ -1,14 +1,35 @@
-<h1 class="text-white">Buscando: <small>{{ palabra }}</small></h1>
-<hr class="bg-white">
+<div class="search-header">
+  <h1 class="text-white">
+    Buscando: <small>{{ palabra }}</small>
+  </h1>
+</div>
+<hr class="bg-white" />
 
-<div class="row animated fadeIn slow" *ngIf="heroes.length == 0">
-    <div class="col-md-12">
-        <div class="alert alert-info" role="alert">
-            No existen resultados sobre la busqueda realizada: {{ palabra }}
-        </div>
-    </div>
+<!-- Loading spinner -->
+<div *ngIf="loading" class="search-loading">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Buscando...</span>
+  </div>
+  <p>Buscando héroes...</p>
 </div>
 
-<div class="card-columns">
-    <app-heroe-tarjeta [heroe]="item" [index]="item.index || 0" *ngFor="let item of heroes;"></app-heroe-tarjeta>
+<!-- No results message -->
+<div class="empty-state" *ngIf="!loading && heroes.length == 0">
+  <div class="alert alert-info" role="alert">
+    <h3>¡Ups! No encontramos nada</h3>
+    <p>
+      No existen resultados para la búsqueda: <strong>"{{ palabra }}"</strong>
+    </p>
+    <div class="search-suggestions">
+      <p><strong>Sugerencias:</strong></p>
+      <p>• Intenta con términos más generales</p>
+      <p>• Revisa la ortografía</p>
+      <p>• Busca por nombre de héroe o casa editorial</p>
+    </div>
+  </div>
+</div>
+
+<!-- Results with improved grid -->
+<div class="heroes-grid" *ngIf="!loading && heroes.length > 0">
+  <app-heroe-tarjeta [heroe]="item" [index]="i" *ngFor="let item of heroes; let i = index"> </app-heroe-tarjeta>
 </div>
