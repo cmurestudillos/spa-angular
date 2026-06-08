@@ -27,16 +27,17 @@ Una aplicación web moderna construida con **MEAN Stack** que permite explorar y
 - **Mongoose** - ODM para MongoDB
 
 ### Herramientas de Desarrollo
-- **Angular CLI** - Herramientas de desarrollo
+- **Angular CLI 17** - Herramientas de desarrollo
+- **pnpm 11.5.2** - Gestión de paquetes
 - **Git** - Control de versiones
 - **Vercel** - Deployment y hosting
 
 ## 📦 Instalación
 
 ### Prerrequisitos
-- Node.js (v16 o superior)
-- npm o yarn
-- Angular CLI
+- Node.js (v18 o superior)
+- pnpm 11.5.2 (`npm install -g pnpm`)
+- Angular CLI (`pnpm add -g @angular/cli`)
 
 ### Pasos de instalación
 
@@ -48,18 +49,17 @@ Una aplicación web moderna construida con **MEAN Stack** que permite explorar y
 
 2. **Instalar dependencias**
    ```bash
-   npm install
+   pnpm install
    ```
 
-3. **Configurar variables de entorno**
+3. **Autorizar build scripts (requerido con pnpm 11)**
    ```bash
-   # Crear archivo .env en la raíz del proyecto
-   API_URL=https://spa-heroes-service.vercel.app/api
+   pnpm approve-builds --all
    ```
 
 4. **Ejecutar la aplicación**
    ```bash
-   ng serve
+   pnpm start
    ```
 
 5. **Abrir en el navegador**
@@ -145,7 +145,7 @@ La aplicación está desplegada en Vercel y se puede acceder en:
 
 1. **Build de producción**
    ```bash
-   ng build --prod
+   pnpm build
    ```
 
 2. **Deploy a Vercel**
@@ -157,13 +157,13 @@ La aplicación está desplegada en Vercel y se puede acceder en:
 
 ```bash
 # Ejecutar tests unitarios
-ng test
+pnpm test
 
-# Ejecutar tests e2e
-ng e2e
+# Linting
+pnpm lint
 
 # Coverage report
-ng test --code-coverage
+pnpm test -- --code-coverage
 ```
 
 ## 📈 Optimizaciones
