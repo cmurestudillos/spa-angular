@@ -31,7 +31,6 @@ export class HeroeComponent implements OnInit {
         },
       });
     });
-    console.log(this.heroe);
   }
 
   // Método para formatear la fecha de aparición

@@ -43,7 +43,7 @@
       </p>
       <div>
         <img
-          *ngIf="heroe.casa == 'DC'"
+          *ngIf="heroe.casa === 'DC'"
           src="assets/img/dc.svg"
           [title]="heroe.casa"
           class="img-fluid"
@@ -51,7 +51,7 @@
           height="150"
           [alt]="heroe.casa" />
         <img
-          *ngIf="heroe.casa == 'Marvel'"
+          *ngIf="heroe.casa === 'Marvel'"
           src="assets/img/marvel.svg"
           [title]="heroe.casa"
           class="img-fluid"
